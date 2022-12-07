@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính BMI</title>
+</head>
+<body>
+<b>Weight</b><br><input id="weight" type="text"><br><br>
+<b>Height</b><br><input id="height" type="text"><br><br>
+<button onclick="total()">Tính BMI</button><br><br>
+<b id="bmi"></b>
+<script>
+function total(){
+  let a = +document.getElementById('weight').value
+  let b = +document.getElementById('height').value
+  let bmi = a / (b * b)
+  document.getElementById('bmi').innerHTML = 'BMI = ' + bmi
+}
+</script>
+</body>
+</html>
